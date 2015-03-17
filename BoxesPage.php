@@ -138,13 +138,13 @@ abstract class scbBoxesPage extends scbAdminPage {
 	echo "\t<div class='postbox-container' style='width:{$this->args['column_widths'][0]}%'>\n";
 	do_meta_boxes( $this->pagehook, 'normal', '' );
 
-	echo "\t</div><div class='postbox-container' style='width:{$hide2}{$this->args['column_widths'][1]}%'>\n";
+	echo "\t</div><div class='postbox-container' style='{$hide2}width:{$this->args['column_widths'][1]}%'>\n";
 	do_meta_boxes( $this->pagehook, 'side', '' );
 
-	echo "\t</div><div class='postbox-container' style='width:{$hide3}{$this->args['column_widths'][2]}%'>\n";
+	echo "\t</div><div class='postbox-container' style='{$hide3}width:{$this->args['column_widths'][2]}%'>\n";
 	do_meta_boxes( $this->pagehook, 'column3', '' );
 
-	echo "\t</div><div class='postbox-container' style='width:{$hide4}{$this->args['column_widths'][3]}%'>\n";
+	echo "\t</div><div class='postbox-container' style='{$hide4}width:{$this->args['column_widths'][3]}%'>\n";
 	do_meta_boxes( $this->pagehook, 'column4', '' );
 ?>
 </div></div>
